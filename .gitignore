@@ -1,0 +1,8 @@
+study/
+build/
+*.o
+*.obj
+*.user
+CMakeCache.txt
+CMakeFiles/
+.DS_Store

@@ -6,6 +6,12 @@
 #include <QJsonArray>
 #include <QJsonDocument>
 #include <QLabel>
+#include <QDialog>
+#include <QDialogButtonBox>
+#include <QLineEdit>
+#include <QComboBox>
+#include <QVBoxLayout>
+#include <QDateTime>
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     setWindowTitle("Supa LLM Client");
@@ -14,13 +20,13 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     m_groqClient    = new GroqClient(this);
     m_ollamaManager = new OllamaManager(this);
     m_themeManager  = new ThemeManager(this);
+    m_store         = new ConversationStore(this);
+    m_store->init();
 
     setupMenuBar();
 
     auto *central = new QWidget(this);
     auto *layout  = new QVBoxLayout(central);
-
-    layout->addWidget(setupBackendBar());
 
     m_chatView = new QWebEngineView(this);
 
@@ -52,51 +58,62 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     connect(m_ollamaManager, &OllamaManager::tokenReceived,    this, &MainWindow::onTokenReceived);
     connect(m_ollamaManager, &OllamaManager::responseFinished, this, &MainWindow::onResponseFinished);
     connect(m_ollamaManager, &OllamaManager::errorOccurred,    this, &MainWindow::onErrorOccurred);
-    connect(m_ollamaManager, &OllamaManager::installedModelsChanged,
-            this, &MainWindow::onOllamaModelsChanged);
 
     connect(m_themeManager, &ThemeManager::customThemesChanged,
             this, &MainWindow::rebuildThemeMenu);
 }
 
-QWidget *MainWindow::setupBackendBar() {
-    auto *bar = new QWidget(this);
-    auto *row = new QHBoxLayout(bar);
-    row->setContentsMargins(0, 0, 0, 0);
-
-    row->addWidget(new QLabel("Backend:", this));
-    m_backendCombo = new QComboBox(this);
-    m_backendCombo->addItem("Groq (cloud)", static_cast<int>(Backend::Groq));
-    m_backendCombo->addItem("Ollama (local)", static_cast<int>(Backend::Ollama));
-    row->addWidget(m_backendCombo);
-
-    row->addWidget(new QLabel("Model:", this));
-    m_modelCombo = new QComboBox(this);
-    row->addWidget(m_modelCombo, 1);
-
-    connect(m_backendCombo, QOverload<int>::of(&QComboBox::currentIndexChanged),
-            this, &MainWindow::onBackendChanged);
-
-    onBackendChanged(0);
-
-    return bar;
-}
-
 void MainWindow::setupMenuBar() {
     QMenu *settingsMenu = menuBar()->addMenu("Settings");
 
+    QAction *modelAction  = new QAction("Backend && Model", this);
     QAction *groqAction   = new QAction("Configure Groq API", this);
     QAction *ollamaAction = new QAction("Configure Ollama", this);
 
-    settingsMenu->addAction(groqAction);
+    settingsMenu->addAction(modelAction);
     settingsMenu->addSeparator();
+    settingsMenu->addAction(groqAction);
     settingsMenu->addAction(ollamaAction);
 
+    connect(modelAction,  &QAction::triggered, this, &MainWindow::onConfigureModel);
     connect(groqAction,   &QAction::triggered, this, &MainWindow::onConfigureGroq);
     connect(ollamaAction, &QAction::triggered, this, &MainWindow::onConfigureOllama);
 
+    m_historyMenu = menuBar()->addMenu("History");
+    rebuildHistoryMenu();
+
     m_themeMenu = menuBar()->addMenu("Theme");
     rebuildThemeMenu();
+}
+
+void MainWindow::rebuildHistoryMenu() {
+    m_historyMenu->clear();
+
+    QAction *newChat = new QAction("New Chat", this);
+    connect(newChat, &QAction::triggered, this, &MainWindow::onNewChat);
+    m_historyMenu->addAction(newChat);
+
+    m_historyMenu->addSeparator();
+
+    QList<ConversationMeta> convs = m_store->listConversations();
+    if (convs.isEmpty()) {
+        QAction *empty = new QAction("(no saved chats)", this);
+        empty->setEnabled(false);
+        m_historyMenu->addAction(empty);
+    } else {
+        for (const ConversationMeta &c : convs) {
+            QAction *action = new QAction(c.title, this);
+            connect(action, &QAction::triggered, this, [this, id = c.id]() {
+                onLoadConversation(id);
+            });
+            m_historyMenu->addAction(action);
+        }
+    }
+
+    m_historyMenu->addSeparator();
+    QAction *manage = new QAction("Manage Chats...", this);
+    connect(manage, &QAction::triggered, this, &MainWindow::onManageHistory);
+    m_historyMenu->addAction(manage);
 }
 
 void MainWindow::rebuildThemeMenu() {
@@ -132,27 +149,134 @@ void MainWindow::rebuildThemeMenu() {
     m_themeMenu->addAction(manageAction);
 }
 
-void MainWindow::onBackendChanged(int index) {
-    m_backend = static_cast<Backend>(m_backendCombo->itemData(index).toInt());
-    m_modelCombo->clear();
+QString MainWindow::makeTitle(const QString &firstMessage) {
+    QString title = firstMessage.trimmed().simplified();
+    if (title.length() > 40)
+        title = title.left(40) + "...";
+    if (title.isEmpty())
+        title = "Chat " + QDateTime::currentDateTime().toString("MMM d, h:mm ap");
+    return title;
+}
 
-    if (m_backend == Backend::Groq) {
-        m_modelCombo->addItem("openai/gpt-oss-20b");
-        m_modelCombo->addItem("openai/gpt-oss-120b");
-    } else {
-        // Ollama: show installed models
-        m_ollamaManager->refreshInstalledModels();
+void MainWindow::onNewChat() {
+    m_messages.clear();
+    m_currentConversationId = -1;
+    m_currentAssistantMsg.clear();
+    updateMessages();
+}
+
+void MainWindow::onLoadConversation(int id) {
+    m_messages = m_store->loadMessages(id);
+    m_currentConversationId = id;
+    m_currentAssistantMsg.clear();
+    updateMessages();
+}
+
+void MainWindow::onManageHistory() {
+    QList<ConversationMeta> convs = m_store->listConversations();
+    if (convs.isEmpty()) {
+        QMessageBox::information(this, "Manage Chats", "No saved chats yet.");
+        return;
+    }
+
+    QStringList titles;
+    for (const ConversationMeta &c : convs) titles << c.title;
+
+    bool ok;
+    QString choice = QInputDialog::getItem(this, "Manage Chats",
+                                           "Select a chat:", titles, 0, false, &ok);
+    if (!ok || choice.isEmpty()) return;
+
+    int selectedId = -1;
+    for (const ConversationMeta &c : convs)
+        if (c.title == choice) { selectedId = c.id; break; }
+    if (selectedId == -1) return;
+
+    QStringList actions = { "Rename", "Delete" };
+    QString action = QInputDialog::getItem(this, "Manage Chats",
+                                           "Action for \"" + choice + "\":",
+                                           actions, 0, false, &ok);
+    if (!ok) return;
+
+    if (action == "Rename") {
+        QString newTitle = QInputDialog::getText(this, "Rename Chat",
+                                                 "New title:", QLineEdit::Normal,
+                                                 choice, &ok);
+        if (ok && !newTitle.isEmpty()) {
+            m_store->renameConversation(selectedId, newTitle);
+            rebuildHistoryMenu();
+        }
+    } else if (action == "Delete") {
+        auto reply = QMessageBox::question(this, "Confirm Delete",
+                                           "Delete chat \"" + choice + "\"?",
+                                           QMessageBox::Yes | QMessageBox::No);
+        if (reply == QMessageBox::Yes) {
+            m_store->deleteConversation(selectedId);
+            if (m_currentConversationId == selectedId) onNewChat();
+            rebuildHistoryMenu();
+        }
     }
 }
 
-void MainWindow::onOllamaModelsChanged(const QStringList &models) {
-    if (m_backend != Backend::Ollama) return;
+void MainWindow::onConfigureModel() {
+    QDialog dialog(this);
+    dialog.setWindowTitle("Backend & Model");
+    dialog.setMinimumWidth(360);
 
-    m_modelCombo->clear();
-    if (models.isEmpty()) {
-        m_modelCombo->addItem("(no models — see Configure Ollama)");
-    } else {
-        m_modelCombo->addItems(models);
+    auto *layout = new QVBoxLayout(&dialog);
+
+    layout->addWidget(new QLabel("Backend:", &dialog));
+    auto *backendCombo = new QComboBox(&dialog);
+    backendCombo->addItem("Groq (cloud)", static_cast<int>(Backend::Groq));
+    backendCombo->addItem("Ollama (local)", static_cast<int>(Backend::Ollama));
+    backendCombo->setCurrentIndex(static_cast<int>(m_backend));
+    layout->addWidget(backendCombo);
+
+    layout->addWidget(new QLabel("Model:", &dialog));
+    auto *modelCombo = new QComboBox(&dialog);
+    layout->addWidget(modelCombo);
+
+    auto populateModels = [this, modelCombo](Backend backend) {
+        modelCombo->clear();
+        if (backend == Backend::Groq) {
+            modelCombo->addItem("openai/gpt-oss-20b");
+            modelCombo->addItem("openai/gpt-oss-120b");
+        } else {
+            QStringList installed = m_ollamaManager->installedModels();
+            if (installed.isEmpty())
+                modelCombo->addItem("(no models — see Configure Ollama)");
+            else
+                modelCombo->addItems(installed);
+        }
+    };
+
+    populateModels(m_backend);
+    if (!m_currentModel.isEmpty()) {
+        int idx = modelCombo->findText(m_currentModel);
+        if (idx >= 0) modelCombo->setCurrentIndex(idx);
+    }
+
+    connect(backendCombo, QOverload<int>::of(&QComboBox::currentIndexChanged),
+            &dialog, [populateModels](int index) {
+        populateModels(static_cast<Backend>(index));
+    });
+
+    auto *buttons = new QDialogButtonBox(
+        QDialogButtonBox::Ok | QDialogButtonBox::Cancel, &dialog);
+    layout->addWidget(buttons);
+    connect(buttons, &QDialogButtonBox::accepted, &dialog, &QDialog::accept);
+    connect(buttons, &QDialogButtonBox::rejected, &dialog, &QDialog::reject);
+
+    if (dialog.exec() == QDialog::Accepted) {
+        m_backend = static_cast<Backend>(backendCombo->currentData().toInt());
+        m_currentModel = modelCombo->currentText();
+
+        QSettings settings("SupaLLM", "SupaLLMClient");
+        settings.setValue("backend/type", static_cast<int>(m_backend));
+        settings.setValue("backend/model", m_currentModel);
+
+        if (m_backend == Backend::Ollama)
+            m_ollamaManager->refreshInstalledModels();
     }
 }
 
@@ -161,6 +285,10 @@ void MainWindow::loadSettings() {
     m_groqApiKey = settings.value("groq/apiKey", "").toString();
     m_groqClient->setApiKey(m_groqApiKey);
     m_themeManager->loadSaved();
+
+    m_backend = static_cast<Backend>(
+        settings.value("backend/type", static_cast<int>(Backend::Groq)).toInt());
+    m_currentModel = settings.value("backend/model", "").toString();
 }
 
 void MainWindow::onPageLoaded(bool ok) {
@@ -206,7 +334,7 @@ void MainWindow::updateMessages() {
 QJsonArray MainWindow::buildMessageHistory() {
     QJsonArray arr;
     for (const Message &msg : m_messages) {
-        if (msg.content.isEmpty()) continue;  // skip the pending assistant slot
+        if (msg.content.isEmpty()) continue;
         QJsonObject obj;
         obj["role"]    = (msg.role == Role::User) ? "user" : "assistant";
         obj["content"] = msg.content;
@@ -224,17 +352,27 @@ void MainWindow::onSendClicked() {
         return;
     }
 
-    QString model = m_modelCombo->currentText();
+    QString model = m_currentModel;
+    if (m_backend == Backend::Groq && model.isEmpty())
+        model = "openai/gpt-oss-20b";
+
     if (m_backend == Backend::Ollama &&
         (model.isEmpty() || model.startsWith("("))) {
         QMessageBox::warning(this, "No Model",
-            "No Ollama model selected. Open Settings → Configure Ollama to download one.");
+            "No Ollama model selected. Open Settings → Backend & Model to pick one.");
         return;
     }
 
-    m_messages.append({ Role::User, text, 0 });
+    // Create a conversation on first message
+    if (m_currentConversationId == -1) {
+        m_currentConversationId = m_store->createConversation(makeTitle(text));
+        rebuildHistoryMenu();
+    }
 
-    // Build history BEFORE appending the empty assistant slot
+    Message userMsg { Role::User, text, QDateTime::currentSecsSinceEpoch() };
+    m_messages.append(userMsg);
+    m_store->addMessage(m_currentConversationId, userMsg);
+
     QJsonArray history = buildMessageHistory();
 
     m_messages.append({ Role::Assistant, "", 0 });
@@ -259,6 +397,13 @@ void MainWindow::onTokenReceived(const QString &token) {
 }
 
 void MainWindow::onResponseFinished() {
+    // Persist the completed assistant message
+    if (!m_messages.isEmpty() && m_currentConversationId != -1) {
+        const Message &last = m_messages.last();
+        if (last.role == Role::Assistant && !last.content.isEmpty()) {
+            m_store->addMessage(m_currentConversationId, last);
+        }
+    }
     m_sendButton->setEnabled(true);
 }
 
@@ -270,35 +415,49 @@ void MainWindow::onErrorOccurred(const QString &error) {
 }
 
 void MainWindow::onConfigureGroq() {
-    QMessageBox intro(this);
-    intro.setWindowTitle("Groq API Key");
-    intro.setTextFormat(Qt::RichText);
-    intro.setText(
-        "Groq offers a <b>free</b> API with fast inference.<br><br>"
-        "To get a key:<br>"
-        "1. Sign up at console.groq.com<br>"
+    QDialog dialog(this);
+    dialog.setWindowTitle("Configure Groq API");
+    dialog.setMinimumWidth(420);
+
+    auto *layout = new QVBoxLayout(&dialog);
+
+    auto *label = new QLabel("Groq API Key:", &dialog);
+    layout->addWidget(label);
+
+    auto *keyField = new QLineEdit(&dialog);
+    keyField->setEchoMode(QLineEdit::Password);
+    keyField->setPlaceholderText("gsk_...");
+    keyField->setText(m_groqApiKey);
+    layout->addWidget(keyField);
+
+    auto *guide = new QLabel(&dialog);
+    guide->setTextFormat(Qt::RichText);
+    guide->setOpenExternalLinks(true);
+    guide->setWordWrap(true);
+    guide->setText(
+        "<br><b>Don't have a key?</b> Groq offers a <b>free</b> API with fast inference.<br><br>"
+        "1. Sign up at <a href='https://console.groq.com'>console.groq.com</a><br>"
         "2. Go to <b>API Keys</b><br>"
-        "3. Create a key and copy it<br><br>"
-        "Then paste it in the next dialog."
+        "3. Create a key and paste it above"
     );
-    intro.setStandardButtons(QMessageBox::Open | QMessageBox::Ok);
-    intro.button(QMessageBox::Open)->setText("Open Groq Console");
+    layout->addWidget(guide);
 
-    if (intro.exec() == QMessageBox::Open) {
-        QDesktopServices::openUrl(QUrl("https://console.groq.com/keys"));
-    }
+    auto *buttons = new QDialogButtonBox(
+        QDialogButtonBox::Save | QDialogButtonBox::Cancel, &dialog);
+    layout->addWidget(buttons);
 
-    QSettings settings("SupaLLM", "SupaLLMClient");
-    bool ok;
-    QString key = QInputDialog::getText(this, "Groq API Key",
-                                        "Enter your Groq API key:",
-                                        QLineEdit::Password,
-                                        m_groqApiKey, &ok);
-    if (ok && !key.isEmpty()) {
-        m_groqApiKey = key;
-        settings.setValue("groq/apiKey", key);
-        m_groqClient->setApiKey(key);
-        QMessageBox::information(this, "Groq", "API key saved.");
+    connect(buttons, &QDialogButtonBox::accepted, &dialog, &QDialog::accept);
+    connect(buttons, &QDialogButtonBox::rejected, &dialog, &QDialog::reject);
+
+    if (dialog.exec() == QDialog::Accepted) {
+        QString key = keyField->text().trimmed();
+        if (!key.isEmpty()) {
+            m_groqApiKey = key;
+            QSettings settings("SupaLLM", "SupaLLMClient");
+            settings.setValue("groq/apiKey", key);
+            m_groqClient->setApiKey(key);
+            QMessageBox::information(this, "Groq", "API key saved.");
+        }
     }
 }
 
@@ -306,7 +465,6 @@ void MainWindow::onConfigureOllama() {
     OllamaDialog dialog(m_ollamaManager, this);
     dialog.exec();
 
-    // Refresh model list if we're on the Ollama backend
     if (m_backend == Backend::Ollama) {
         m_ollamaManager->refreshInstalledModels();
     }

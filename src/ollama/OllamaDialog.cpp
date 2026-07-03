@@ -4,6 +4,7 @@
 #include <QGroupBox>
 #include <QMessageBox>
 #include <QDesktopServices>
+#include <QRegularExpression>
 #include <QUrl>
 
 OllamaDialog::OllamaDialog(OllamaManager *manager, QWidget *parent)
@@ -133,9 +134,14 @@ void OllamaDialog::onInstalledModelsChanged(const QStringList &models) {
     m_installedList->clear();
     m_installedList->addItems(models);
 }
-
 void OllamaDialog::onPullProgress(const QString &line) {
-    m_logOutput->appendPlainText(line.trimmed());
+    QString clean = line;
+    // Strip ANSI escape sequences (color codes, cursor moves) from CLI output
+    static const QRegularExpression ansi("\\x1B\\[[0-9;?]*[a-zA-Z]");
+    clean.remove(ansi);
+    clean = clean.trimmed();
+    if (!clean.isEmpty())
+        m_logOutput->appendPlainText(clean);
 }
 
 void OllamaDialog::onPullFinished(const QString &tag, bool success) {
