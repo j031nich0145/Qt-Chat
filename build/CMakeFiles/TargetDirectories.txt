@@ -1,0 +1,7 @@
+/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles/SupaLLMClient.dir
+/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles/edit_cache.dir
+/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles/rebuild_cache.dir
+/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles/SupaLLMClient_autogen_timestamp_deps.dir
+/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles/SupaLLMClient_autogen.dir
+/home/ubu/Documents/BUILD/Qt-Chat/build/_deps/nlohmann_json-build/CMakeFiles/edit_cache.dir
+/home/ubu/Documents/BUILD/Qt-Chat/build/_deps/nlohmann_json-build/CMakeFiles/rebuild_cache.dir
