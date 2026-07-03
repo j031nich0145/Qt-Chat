@@ -69,10 +69,18 @@ include CMakeFiles/SupaLLMClient.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/SupaLLMClient.dir/flags.make
 
+SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp: /home/ubu/Documents/BUILD/Qt-Chat/resources/app.qrc
+SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp: CMakeFiles/SupaLLMClient_autogen.dir/AutoRcc_app_3YJK5W5UP7_Info.json
+SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp: /home/ubu/Documents/BUILD/Qt-Chat/resources/web/chat.html
+SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp: /home/ubu/Documents/BUILD/Qt-Chat/resources/web/marked.min.js
+SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp: /usr/lib/qt6/libexec/rcc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic RCC for resources/app.qrc"
+	/usr/bin/cmake -E cmake_autorcc /home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles/SupaLLMClient_autogen.dir/AutoRcc_app_3YJK5W5UP7_Info.json 
+
 CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/mocs_compilation.cpp.o: CMakeFiles/SupaLLMClient.dir/flags.make
 CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/mocs_compilation.cpp.o: SupaLLMClient_autogen/mocs_compilation.cpp
 CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/mocs_compilation.cpp.o: CMakeFiles/SupaLLMClient.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/mocs_compilation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/mocs_compilation.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/mocs_compilation.cpp.o -MF CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/mocs_compilation.cpp.o -c /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/mocs_compilation.cpp
 
 CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/mocs_compilation.cpp.i: cmake_force
@@ -86,7 +94,7 @@ CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/mocs_compilation.cpp.s: cmake
 CMakeFiles/SupaLLMClient.dir/src/main.cpp.o: CMakeFiles/SupaLLMClient.dir/flags.make
 CMakeFiles/SupaLLMClient.dir/src/main.cpp.o: /home/ubu/Documents/BUILD/Qt-Chat/src/main.cpp
 CMakeFiles/SupaLLMClient.dir/src/main.cpp.o: CMakeFiles/SupaLLMClient.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SupaLLMClient.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SupaLLMClient.dir/src/main.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SupaLLMClient.dir/src/main.cpp.o -MF CMakeFiles/SupaLLMClient.dir/src/main.cpp.o.d -o CMakeFiles/SupaLLMClient.dir/src/main.cpp.o -c /home/ubu/Documents/BUILD/Qt-Chat/src/main.cpp
 
 CMakeFiles/SupaLLMClient.dir/src/main.cpp.i: cmake_force
@@ -100,7 +108,7 @@ CMakeFiles/SupaLLMClient.dir/src/main.cpp.s: cmake_force
 CMakeFiles/SupaLLMClient.dir/src/MainWindow.cpp.o: CMakeFiles/SupaLLMClient.dir/flags.make
 CMakeFiles/SupaLLMClient.dir/src/MainWindow.cpp.o: /home/ubu/Documents/BUILD/Qt-Chat/src/MainWindow.cpp
 CMakeFiles/SupaLLMClient.dir/src/MainWindow.cpp.o: CMakeFiles/SupaLLMClient.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SupaLLMClient.dir/src/MainWindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SupaLLMClient.dir/src/MainWindow.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SupaLLMClient.dir/src/MainWindow.cpp.o -MF CMakeFiles/SupaLLMClient.dir/src/MainWindow.cpp.o.d -o CMakeFiles/SupaLLMClient.dir/src/MainWindow.cpp.o -c /home/ubu/Documents/BUILD/Qt-Chat/src/MainWindow.cpp
 
 CMakeFiles/SupaLLMClient.dir/src/MainWindow.cpp.i: cmake_force
@@ -114,7 +122,7 @@ CMakeFiles/SupaLLMClient.dir/src/MainWindow.cpp.s: cmake_force
 CMakeFiles/SupaLLMClient.dir/src/api/GroqClient.cpp.o: CMakeFiles/SupaLLMClient.dir/flags.make
 CMakeFiles/SupaLLMClient.dir/src/api/GroqClient.cpp.o: /home/ubu/Documents/BUILD/Qt-Chat/src/api/GroqClient.cpp
 CMakeFiles/SupaLLMClient.dir/src/api/GroqClient.cpp.o: CMakeFiles/SupaLLMClient.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SupaLLMClient.dir/src/api/GroqClient.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SupaLLMClient.dir/src/api/GroqClient.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SupaLLMClient.dir/src/api/GroqClient.cpp.o -MF CMakeFiles/SupaLLMClient.dir/src/api/GroqClient.cpp.o.d -o CMakeFiles/SupaLLMClient.dir/src/api/GroqClient.cpp.o -c /home/ubu/Documents/BUILD/Qt-Chat/src/api/GroqClient.cpp
 
 CMakeFiles/SupaLLMClient.dir/src/api/GroqClient.cpp.i: cmake_force
@@ -128,7 +136,7 @@ CMakeFiles/SupaLLMClient.dir/src/api/GroqClient.cpp.s: cmake_force
 CMakeFiles/SupaLLMClient.dir/src/db/ConversationStore.cpp.o: CMakeFiles/SupaLLMClient.dir/flags.make
 CMakeFiles/SupaLLMClient.dir/src/db/ConversationStore.cpp.o: /home/ubu/Documents/BUILD/Qt-Chat/src/db/ConversationStore.cpp
 CMakeFiles/SupaLLMClient.dir/src/db/ConversationStore.cpp.o: CMakeFiles/SupaLLMClient.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SupaLLMClient.dir/src/db/ConversationStore.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SupaLLMClient.dir/src/db/ConversationStore.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SupaLLMClient.dir/src/db/ConversationStore.cpp.o -MF CMakeFiles/SupaLLMClient.dir/src/db/ConversationStore.cpp.o.d -o CMakeFiles/SupaLLMClient.dir/src/db/ConversationStore.cpp.o -c /home/ubu/Documents/BUILD/Qt-Chat/src/db/ConversationStore.cpp
 
 CMakeFiles/SupaLLMClient.dir/src/db/ConversationStore.cpp.i: cmake_force
@@ -139,13 +147,88 @@ CMakeFiles/SupaLLMClient.dir/src/db/ConversationStore.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SupaLLMClient.dir/src/db/ConversationStore.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubu/Documents/BUILD/Qt-Chat/src/db/ConversationStore.cpp -o CMakeFiles/SupaLLMClient.dir/src/db/ConversationStore.cpp.s
 
+CMakeFiles/SupaLLMClient.dir/src/theme/ThemeManager.cpp.o: CMakeFiles/SupaLLMClient.dir/flags.make
+CMakeFiles/SupaLLMClient.dir/src/theme/ThemeManager.cpp.o: /home/ubu/Documents/BUILD/Qt-Chat/src/theme/ThemeManager.cpp
+CMakeFiles/SupaLLMClient.dir/src/theme/ThemeManager.cpp.o: CMakeFiles/SupaLLMClient.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SupaLLMClient.dir/src/theme/ThemeManager.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SupaLLMClient.dir/src/theme/ThemeManager.cpp.o -MF CMakeFiles/SupaLLMClient.dir/src/theme/ThemeManager.cpp.o.d -o CMakeFiles/SupaLLMClient.dir/src/theme/ThemeManager.cpp.o -c /home/ubu/Documents/BUILD/Qt-Chat/src/theme/ThemeManager.cpp
+
+CMakeFiles/SupaLLMClient.dir/src/theme/ThemeManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SupaLLMClient.dir/src/theme/ThemeManager.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubu/Documents/BUILD/Qt-Chat/src/theme/ThemeManager.cpp > CMakeFiles/SupaLLMClient.dir/src/theme/ThemeManager.cpp.i
+
+CMakeFiles/SupaLLMClient.dir/src/theme/ThemeManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SupaLLMClient.dir/src/theme/ThemeManager.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubu/Documents/BUILD/Qt-Chat/src/theme/ThemeManager.cpp -o CMakeFiles/SupaLLMClient.dir/src/theme/ThemeManager.cpp.s
+
+CMakeFiles/SupaLLMClient.dir/src/theme/ThemeDialog.cpp.o: CMakeFiles/SupaLLMClient.dir/flags.make
+CMakeFiles/SupaLLMClient.dir/src/theme/ThemeDialog.cpp.o: /home/ubu/Documents/BUILD/Qt-Chat/src/theme/ThemeDialog.cpp
+CMakeFiles/SupaLLMClient.dir/src/theme/ThemeDialog.cpp.o: CMakeFiles/SupaLLMClient.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SupaLLMClient.dir/src/theme/ThemeDialog.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SupaLLMClient.dir/src/theme/ThemeDialog.cpp.o -MF CMakeFiles/SupaLLMClient.dir/src/theme/ThemeDialog.cpp.o.d -o CMakeFiles/SupaLLMClient.dir/src/theme/ThemeDialog.cpp.o -c /home/ubu/Documents/BUILD/Qt-Chat/src/theme/ThemeDialog.cpp
+
+CMakeFiles/SupaLLMClient.dir/src/theme/ThemeDialog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SupaLLMClient.dir/src/theme/ThemeDialog.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubu/Documents/BUILD/Qt-Chat/src/theme/ThemeDialog.cpp > CMakeFiles/SupaLLMClient.dir/src/theme/ThemeDialog.cpp.i
+
+CMakeFiles/SupaLLMClient.dir/src/theme/ThemeDialog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SupaLLMClient.dir/src/theme/ThemeDialog.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubu/Documents/BUILD/Qt-Chat/src/theme/ThemeDialog.cpp -o CMakeFiles/SupaLLMClient.dir/src/theme/ThemeDialog.cpp.s
+
+CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaManager.cpp.o: CMakeFiles/SupaLLMClient.dir/flags.make
+CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaManager.cpp.o: /home/ubu/Documents/BUILD/Qt-Chat/src/ollama/OllamaManager.cpp
+CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaManager.cpp.o: CMakeFiles/SupaLLMClient.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaManager.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaManager.cpp.o -MF CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaManager.cpp.o.d -o CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaManager.cpp.o -c /home/ubu/Documents/BUILD/Qt-Chat/src/ollama/OllamaManager.cpp
+
+CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaManager.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubu/Documents/BUILD/Qt-Chat/src/ollama/OllamaManager.cpp > CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaManager.cpp.i
+
+CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaManager.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubu/Documents/BUILD/Qt-Chat/src/ollama/OllamaManager.cpp -o CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaManager.cpp.s
+
+CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaDialog.cpp.o: CMakeFiles/SupaLLMClient.dir/flags.make
+CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaDialog.cpp.o: /home/ubu/Documents/BUILD/Qt-Chat/src/ollama/OllamaDialog.cpp
+CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaDialog.cpp.o: CMakeFiles/SupaLLMClient.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaDialog.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaDialog.cpp.o -MF CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaDialog.cpp.o.d -o CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaDialog.cpp.o -c /home/ubu/Documents/BUILD/Qt-Chat/src/ollama/OllamaDialog.cpp
+
+CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaDialog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaDialog.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubu/Documents/BUILD/Qt-Chat/src/ollama/OllamaDialog.cpp > CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaDialog.cpp.i
+
+CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaDialog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaDialog.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubu/Documents/BUILD/Qt-Chat/src/ollama/OllamaDialog.cpp -o CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaDialog.cpp.s
+
+CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.o: CMakeFiles/SupaLLMClient.dir/flags.make
+CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.o: SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp
+CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.o: CMakeFiles/SupaLLMClient.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.o -MF CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.o.d -o CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.o -c /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp
+
+CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp > CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.i
+
+CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp -o CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.s
+
 # Object files for target SupaLLMClient
 SupaLLMClient_OBJECTS = \
 "CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/SupaLLMClient.dir/src/main.cpp.o" \
 "CMakeFiles/SupaLLMClient.dir/src/MainWindow.cpp.o" \
 "CMakeFiles/SupaLLMClient.dir/src/api/GroqClient.cpp.o" \
-"CMakeFiles/SupaLLMClient.dir/src/db/ConversationStore.cpp.o"
+"CMakeFiles/SupaLLMClient.dir/src/db/ConversationStore.cpp.o" \
+"CMakeFiles/SupaLLMClient.dir/src/theme/ThemeManager.cpp.o" \
+"CMakeFiles/SupaLLMClient.dir/src/theme/ThemeDialog.cpp.o" \
+"CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaManager.cpp.o" \
+"CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaDialog.cpp.o" \
+"CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.o"
 
 # External object files for target SupaLLMClient
 SupaLLMClient_EXTERNAL_OBJECTS =
@@ -155,16 +238,30 @@ SupaLLMClient: CMakeFiles/SupaLLMClient.dir/src/main.cpp.o
 SupaLLMClient: CMakeFiles/SupaLLMClient.dir/src/MainWindow.cpp.o
 SupaLLMClient: CMakeFiles/SupaLLMClient.dir/src/api/GroqClient.cpp.o
 SupaLLMClient: CMakeFiles/SupaLLMClient.dir/src/db/ConversationStore.cpp.o
+SupaLLMClient: CMakeFiles/SupaLLMClient.dir/src/theme/ThemeManager.cpp.o
+SupaLLMClient: CMakeFiles/SupaLLMClient.dir/src/theme/ThemeDialog.cpp.o
+SupaLLMClient: CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaManager.cpp.o
+SupaLLMClient: CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaDialog.cpp.o
+SupaLLMClient: CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.o
 SupaLLMClient: CMakeFiles/SupaLLMClient.dir/build.make
-SupaLLMClient: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
-SupaLLMClient: /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2
 SupaLLMClient: /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2
+SupaLLMClient: /usr/lib/x86_64-linux-gnu/libQt6WebEngineWidgets.so.6.4.2
+SupaLLMClient: /usr/lib/x86_64-linux-gnu/libQt6WebEngineCore.so.6.4.2
+SupaLLMClient: /usr/lib/x86_64-linux-gnu/libQt6Quick.so.6.4.2
+SupaLLMClient: /usr/lib/x86_64-linux-gnu/libQt6QmlModels.so.6.4.2
+SupaLLMClient: /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.4.2
+SupaLLMClient: /usr/lib/x86_64-linux-gnu/libQt6WebChannel.so.6.4.2
+SupaLLMClient: /usr/lib/x86_64-linux-gnu/libQt6Qml.so.6.4.2
+SupaLLMClient: /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2
+SupaLLMClient: /usr/lib/x86_64-linux-gnu/libQt6Positioning.so.6.4.2
+SupaLLMClient: /usr/lib/x86_64-linux-gnu/libQt6PrintSupport.so.6.4.2
+SupaLLMClient: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
 SupaLLMClient: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2
+SupaLLMClient: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 SupaLLMClient: /usr/lib/x86_64-linux-gnu/libGLX.so
 SupaLLMClient: /usr/lib/x86_64-linux-gnu/libOpenGL.so
-SupaLLMClient: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 SupaLLMClient: CMakeFiles/SupaLLMClient.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable SupaLLMClient"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable SupaLLMClient"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SupaLLMClient.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -175,7 +272,7 @@ CMakeFiles/SupaLLMClient.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/SupaLLMClient.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/SupaLLMClient.dir/clean
 
-CMakeFiles/SupaLLMClient.dir/depend:
+CMakeFiles/SupaLLMClient.dir/depend: SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp
 	cd /home/ubu/Documents/BUILD/Qt-Chat/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubu/Documents/BUILD/Qt-Chat /home/ubu/Documents/BUILD/Qt-Chat /home/ubu/Documents/BUILD/Qt-Chat/build /home/ubu/Documents/BUILD/Qt-Chat/build /home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles/SupaLLMClient.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/SupaLLMClient.dir/depend
 

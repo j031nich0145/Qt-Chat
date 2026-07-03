@@ -67,11 +67,12 @@ include CMakeFiles/SupaLLMClient_autogen_timestamp_deps.dir/compiler_depend.make
 include CMakeFiles/SupaLLMClient_autogen_timestamp_deps.dir/progress.make
 
 CMakeFiles/SupaLLMClient_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
-CMakeFiles/SupaLLMClient_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
 CMakeFiles/SupaLLMClient_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
-CMakeFiles/SupaLLMClient_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
-CMakeFiles/SupaLLMClient_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2
 CMakeFiles/SupaLLMClient_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2
+CMakeFiles/SupaLLMClient_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
+CMakeFiles/SupaLLMClient_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
+CMakeFiles/SupaLLMClient_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6WebEngineWidgets.so.6.4.2
+CMakeFiles/SupaLLMClient_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2
 
 SupaLLMClient_autogen_timestamp_deps: CMakeFiles/SupaLLMClient_autogen_timestamp_deps
 SupaLLMClient_autogen_timestamp_deps: CMakeFiles/SupaLLMClient_autogen_timestamp_deps.dir/build.make

@@ -1,0 +1,24 @@
+{
+	"BUILD_DIR" : "/home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen",
+	"CMAKE_BINARY_DIR" : "/home/ubu/Documents/BUILD/Qt-Chat/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/ubu/Documents/BUILD/Qt-Chat/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/ubu/Documents/BUILD/Qt-Chat",
+	"CMAKE_SOURCE_DIR" : "/home/ubu/Documents/BUILD/Qt-Chat",
+	"GENERATOR" : "Unix Makefiles",
+	"INCLUDE_DIR" : "/home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/ubu/Documents/BUILD/Qt-Chat/resources/web/chat.html",
+		"/home/ubu/Documents/BUILD/Qt-Chat/resources/web/marked.min.js"
+	],
+	"LOCK_FILE" : "/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles/SupaLLMClient_autogen.dir/AutoRcc_app_3YJK5W5UP7_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "app" ],
+	"OUTPUT_CHECKSUM" : "3YJK5W5UP7",
+	"OUTPUT_NAME" : "qrc_app.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt6/libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles/SupaLLMClient_autogen.dir/AutoRcc_app_3YJK5W5UP7_Used.txt",
+	"SOURCE" : "/home/ubu/Documents/BUILD/Qt-Chat/resources/app.qrc",
+	"VERBOSITY" : 0
+}

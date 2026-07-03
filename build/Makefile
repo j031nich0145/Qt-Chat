@@ -155,6 +155,30 @@ SupaLLMClient_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SupaLLMClient_autogen.dir/build.make CMakeFiles/SupaLLMClient_autogen.dir/build
 .PHONY : SupaLLMClient_autogen/fast
 
+SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.o: SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.o
+.PHONY : SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.o
+
+# target to build an object file
+SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SupaLLMClient.dir/build.make CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.o
+.PHONY : SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.o
+
+SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.i: SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.i
+.PHONY : SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.i
+
+# target to preprocess a source file
+SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SupaLLMClient.dir/build.make CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.i
+.PHONY : SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.i
+
+SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.s: SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.s
+.PHONY : SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.s
+
+# target to generate assembly for a file
+SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SupaLLMClient.dir/build.make CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.s
+.PHONY : SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.s
+
 SupaLLMClient_autogen/mocs_compilation.o: SupaLLMClient_autogen/mocs_compilation.cpp.o
 .PHONY : SupaLLMClient_autogen/mocs_compilation.o
 
@@ -275,6 +299,102 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SupaLLMClient.dir/build.make CMakeFiles/SupaLLMClient.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/ollama/OllamaDialog.o: src/ollama/OllamaDialog.cpp.o
+.PHONY : src/ollama/OllamaDialog.o
+
+# target to build an object file
+src/ollama/OllamaDialog.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SupaLLMClient.dir/build.make CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaDialog.cpp.o
+.PHONY : src/ollama/OllamaDialog.cpp.o
+
+src/ollama/OllamaDialog.i: src/ollama/OllamaDialog.cpp.i
+.PHONY : src/ollama/OllamaDialog.i
+
+# target to preprocess a source file
+src/ollama/OllamaDialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SupaLLMClient.dir/build.make CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaDialog.cpp.i
+.PHONY : src/ollama/OllamaDialog.cpp.i
+
+src/ollama/OllamaDialog.s: src/ollama/OllamaDialog.cpp.s
+.PHONY : src/ollama/OllamaDialog.s
+
+# target to generate assembly for a file
+src/ollama/OllamaDialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SupaLLMClient.dir/build.make CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaDialog.cpp.s
+.PHONY : src/ollama/OllamaDialog.cpp.s
+
+src/ollama/OllamaManager.o: src/ollama/OllamaManager.cpp.o
+.PHONY : src/ollama/OllamaManager.o
+
+# target to build an object file
+src/ollama/OllamaManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SupaLLMClient.dir/build.make CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaManager.cpp.o
+.PHONY : src/ollama/OllamaManager.cpp.o
+
+src/ollama/OllamaManager.i: src/ollama/OllamaManager.cpp.i
+.PHONY : src/ollama/OllamaManager.i
+
+# target to preprocess a source file
+src/ollama/OllamaManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SupaLLMClient.dir/build.make CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaManager.cpp.i
+.PHONY : src/ollama/OllamaManager.cpp.i
+
+src/ollama/OllamaManager.s: src/ollama/OllamaManager.cpp.s
+.PHONY : src/ollama/OllamaManager.s
+
+# target to generate assembly for a file
+src/ollama/OllamaManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SupaLLMClient.dir/build.make CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaManager.cpp.s
+.PHONY : src/ollama/OllamaManager.cpp.s
+
+src/theme/ThemeDialog.o: src/theme/ThemeDialog.cpp.o
+.PHONY : src/theme/ThemeDialog.o
+
+# target to build an object file
+src/theme/ThemeDialog.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SupaLLMClient.dir/build.make CMakeFiles/SupaLLMClient.dir/src/theme/ThemeDialog.cpp.o
+.PHONY : src/theme/ThemeDialog.cpp.o
+
+src/theme/ThemeDialog.i: src/theme/ThemeDialog.cpp.i
+.PHONY : src/theme/ThemeDialog.i
+
+# target to preprocess a source file
+src/theme/ThemeDialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SupaLLMClient.dir/build.make CMakeFiles/SupaLLMClient.dir/src/theme/ThemeDialog.cpp.i
+.PHONY : src/theme/ThemeDialog.cpp.i
+
+src/theme/ThemeDialog.s: src/theme/ThemeDialog.cpp.s
+.PHONY : src/theme/ThemeDialog.s
+
+# target to generate assembly for a file
+src/theme/ThemeDialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SupaLLMClient.dir/build.make CMakeFiles/SupaLLMClient.dir/src/theme/ThemeDialog.cpp.s
+.PHONY : src/theme/ThemeDialog.cpp.s
+
+src/theme/ThemeManager.o: src/theme/ThemeManager.cpp.o
+.PHONY : src/theme/ThemeManager.o
+
+# target to build an object file
+src/theme/ThemeManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SupaLLMClient.dir/build.make CMakeFiles/SupaLLMClient.dir/src/theme/ThemeManager.cpp.o
+.PHONY : src/theme/ThemeManager.cpp.o
+
+src/theme/ThemeManager.i: src/theme/ThemeManager.cpp.i
+.PHONY : src/theme/ThemeManager.i
+
+# target to preprocess a source file
+src/theme/ThemeManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SupaLLMClient.dir/build.make CMakeFiles/SupaLLMClient.dir/src/theme/ThemeManager.cpp.i
+.PHONY : src/theme/ThemeManager.cpp.i
+
+src/theme/ThemeManager.s: src/theme/ThemeManager.cpp.s
+.PHONY : src/theme/ThemeManager.s
+
+# target to generate assembly for a file
+src/theme/ThemeManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SupaLLMClient.dir/build.make CMakeFiles/SupaLLMClient.dir/src/theme/ThemeManager.cpp.s
+.PHONY : src/theme/ThemeManager.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -286,6 +406,9 @@ help:
 	@echo "... SupaLLMClient_autogen"
 	@echo "... SupaLLMClient_autogen_timestamp_deps"
 	@echo "... SupaLLMClient"
+	@echo "... SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.o"
+	@echo "... SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.i"
+	@echo "... SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.s"
 	@echo "... SupaLLMClient_autogen/mocs_compilation.o"
 	@echo "... SupaLLMClient_autogen/mocs_compilation.i"
 	@echo "... SupaLLMClient_autogen/mocs_compilation.s"
@@ -301,6 +424,18 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/ollama/OllamaDialog.o"
+	@echo "... src/ollama/OllamaDialog.i"
+	@echo "... src/ollama/OllamaDialog.s"
+	@echo "... src/ollama/OllamaManager.o"
+	@echo "... src/ollama/OllamaManager.i"
+	@echo "... src/ollama/OllamaManager.s"
+	@echo "... src/theme/ThemeDialog.o"
+	@echo "... src/theme/ThemeDialog.i"
+	@echo "... src/theme/ThemeDialog.s"
+	@echo "... src/theme/ThemeManager.o"
+	@echo "... src/theme/ThemeManager.i"
+	@echo "... src/theme/ThemeManager.s"
 .PHONY : help
 
 

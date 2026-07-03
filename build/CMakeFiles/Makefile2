@@ -101,12 +101,12 @@ CMakeFiles/SupaLLMClient.dir/all: CMakeFiles/SupaLLMClient_autogen_timestamp_dep
 CMakeFiles/SupaLLMClient.dir/all: CMakeFiles/SupaLLMClient_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SupaLLMClient.dir/build.make CMakeFiles/SupaLLMClient.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SupaLLMClient.dir/build.make CMakeFiles/SupaLLMClient.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target SupaLLMClient"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target SupaLLMClient"
 .PHONY : CMakeFiles/SupaLLMClient.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SupaLLMClient.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SupaLLMClient.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles 0
 .PHONY : CMakeFiles/SupaLLMClient.dir/rule
@@ -153,7 +153,7 @@ CMakeFiles/SupaLLMClient_autogen_timestamp_deps.dir/clean:
 CMakeFiles/SupaLLMClient_autogen.dir/all: CMakeFiles/SupaLLMClient_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SupaLLMClient_autogen.dir/build.make CMakeFiles/SupaLLMClient_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SupaLLMClient_autogen.dir/build.make CMakeFiles/SupaLLMClient_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles --progress-num=7 "Built target SupaLLMClient_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ubu/Documents/BUILD/Qt-Chat/build/CMakeFiles --progress-num=13 "Built target SupaLLMClient_autogen"
 .PHONY : CMakeFiles/SupaLLMClient_autogen.dir/all
 
 # Build rule for subdir invocation for target.

@@ -1,0 +1,7 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/web">
+        <file>web/marked.min.js</file>
+        <file>web/chat.html</file>
+    </qresource>
+</RCC>

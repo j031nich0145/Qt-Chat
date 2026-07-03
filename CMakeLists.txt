@@ -11,7 +11,7 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Core Widgets Network Sql)
+find_package(Qt6 REQUIRED COMPONENTS Core Widgets Network Sql WebEngineWidgets)
 
 include(FetchContent)
 FetchContent_Declare(
@@ -26,6 +26,12 @@ set(SOURCES
     src/MainWindow.cpp
     src/api/GroqClient.cpp
     src/db/ConversationStore.cpp
+    src/theme/ThemeManager.cpp
+    src/theme/ThemeDialog.cpp
+    src/ollama/OllamaManager.cpp
+    src/ollama/OllamaDialog.cpp
+    resources/app.qrc
+    
 )
 
 set(HEADERS
@@ -33,6 +39,11 @@ set(HEADERS
     src/api/GroqClient.h
     src/db/ConversationStore.h
     src/models/Message.h
+    src/theme/Theme.h
+    src/theme/ThemeManager.h
+    src/theme/ThemeDialog.h
+    src/ollama/OllamaManager.h
+    src/ollama/OllamaDialog.h
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
@@ -44,5 +55,6 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
     Qt6::Widgets
     Qt6::Network
     Qt6::Sql
+    Qt6::WebEngineWidgets
     nlohmann_json::nlohmann_json
 )

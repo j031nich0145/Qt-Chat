@@ -442,25 +442,151 @@ CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/mocs_compilation.cpp.o: \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTextEdit \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtextedit.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineWidgets/QWebEngineView \
+  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineWidgets/qwebengineview.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPageLayout \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpagelayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpagesize.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpageranges.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineWidgets/qtwebenginewidgetsglobal.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/qwebenginepage.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/qtwebenginecoreglobal.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/qtwebenginecore-config.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/qwebengineclientcertificateselection.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtnetwork-config.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qsslcertificate.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtnetworkglobal.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtnetworkexports.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcryptographichash.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qssl.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QFlags \
+  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineCore/qwebenginedownloadrequest.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QComboBox \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcombobox.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleoption.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvalidator.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabbar.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMenuBar \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmenubar.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmenu.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMenu \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QAction \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSettings \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsettings.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
+  /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/UVLADIE3JM/../../../src/api/GroqClient.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QNetworkAccessManager \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qnetworkaccessmanager.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qnetworkrequest.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSharedDataPointer \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QUrl \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QSslConfiguration \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qsslconfiguration.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qsslsocket.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtcpsocket.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qabstractsocket.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qhostaddress.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qsslerror.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QSslPreSharedKeyAuthenticator \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qsslpresharedkeyauthenticator.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMetaType \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QNetworkReply \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qnetworkreply.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QIODevice \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QNetworkRequest \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QByteArray \
+  /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/UVLADIE3JM/../../../src/ollama/OllamaManager.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QProcess \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qprocess.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QJsonArray \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonarray.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonvalue.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcborvalue.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcborcommon.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/quuid.h \
+  /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/UVLADIE3JM/../../../src/ollama/OllamaDialog.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDialog \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpicture.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListWidget \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistwidget.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistview.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qitemselectionmodel.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPlainTextEdit \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qplaintextedit.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtextedit.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qabstracttextdocumentlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qevent.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qpointer.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qeventpoint.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvector2d.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpointingdevice.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputdevice.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qglyphrun.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qrawfont.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontdatabase.h \
+  /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/UVLADIE3JM/../../../src/theme/ThemeManager.h \
+  /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/UVLADIE3JM/../../../src/theme/Theme.h \
+  /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/UVLADIE3JM/../../../src/theme/ThemeDialog.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSpinBox \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qspinbox.h \
+  /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/UVLADIE3JM/../../../src/models/Message.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QSslError \
+  /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/PA7CP7W2FZ/moc_GroqClient.cpp \
+  /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/PA7CP7W2FZ/../../../src/api/GroqClient.h \
+  /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/EZ2KU4HIYP/moc_OllamaDialog.cpp \
+  /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/EZ2KU4HIYP/../../../src/ollama/OllamaDialog.h \
+  /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/EZ2KU4HIYP/moc_OllamaManager.cpp \
+  /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/EZ2KU4HIYP/../../../src/ollama/OllamaManager.h \
+  /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/YLADOPUWMF/moc_ThemeDialog.cpp \
+  /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/YLADOPUWMF/../../../src/theme/ThemeDialog.h \
+  /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/YLADOPUWMF/moc_ThemeManager.cpp \
+  /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/YLADOPUWMF/../../../src/theme/ThemeManager.h

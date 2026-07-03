@@ -8,11 +8,16 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp" "CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.o" "gcc" "CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/3YJK5W5UP7/qrc_app.cpp.o.d"
   "/home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/mocs_compilation.cpp" "CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/mocs_compilation.cpp.o.d"
   "/home/ubu/Documents/BUILD/Qt-Chat/src/MainWindow.cpp" "CMakeFiles/SupaLLMClient.dir/src/MainWindow.cpp.o" "gcc" "CMakeFiles/SupaLLMClient.dir/src/MainWindow.cpp.o.d"
   "/home/ubu/Documents/BUILD/Qt-Chat/src/api/GroqClient.cpp" "CMakeFiles/SupaLLMClient.dir/src/api/GroqClient.cpp.o" "gcc" "CMakeFiles/SupaLLMClient.dir/src/api/GroqClient.cpp.o.d"
   "/home/ubu/Documents/BUILD/Qt-Chat/src/db/ConversationStore.cpp" "CMakeFiles/SupaLLMClient.dir/src/db/ConversationStore.cpp.o" "gcc" "CMakeFiles/SupaLLMClient.dir/src/db/ConversationStore.cpp.o.d"
   "/home/ubu/Documents/BUILD/Qt-Chat/src/main.cpp" "CMakeFiles/SupaLLMClient.dir/src/main.cpp.o" "gcc" "CMakeFiles/SupaLLMClient.dir/src/main.cpp.o.d"
+  "/home/ubu/Documents/BUILD/Qt-Chat/src/ollama/OllamaDialog.cpp" "CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaDialog.cpp.o" "gcc" "CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaDialog.cpp.o.d"
+  "/home/ubu/Documents/BUILD/Qt-Chat/src/ollama/OllamaManager.cpp" "CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaManager.cpp.o" "gcc" "CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaManager.cpp.o.d"
+  "/home/ubu/Documents/BUILD/Qt-Chat/src/theme/ThemeDialog.cpp" "CMakeFiles/SupaLLMClient.dir/src/theme/ThemeDialog.cpp.o" "gcc" "CMakeFiles/SupaLLMClient.dir/src/theme/ThemeDialog.cpp.o.d"
+  "/home/ubu/Documents/BUILD/Qt-Chat/src/theme/ThemeManager.cpp" "CMakeFiles/SupaLLMClient.dir/src/theme/ThemeManager.cpp.o" "gcc" "CMakeFiles/SupaLLMClient.dir/src/theme/ThemeManager.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
