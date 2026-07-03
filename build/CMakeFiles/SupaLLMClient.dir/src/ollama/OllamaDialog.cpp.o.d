@@ -551,4 +551,5 @@ CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaDialog.cpp.o: \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMessageBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmessagebox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QDesktopServices \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qdesktopservices.h
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qdesktopservices.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QRegularExpression

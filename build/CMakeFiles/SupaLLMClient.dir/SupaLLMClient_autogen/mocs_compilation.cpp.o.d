@@ -578,10 +578,19 @@ CMakeFiles/SupaLLMClient.dir/SupaLLMClient_autogen/mocs_compilation.cpp.o: \
   /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/UVLADIE3JM/../../../src/theme/ThemeDialog.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSpinBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qspinbox.h \
+  /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/UVLADIE3JM/../../../src/db/ConversationStore.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsql-config.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlexports.h \
+  /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/UVLADIE3JM/../../../src/db/../models/Message.h \
   /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/UVLADIE3JM/../../../src/models/Message.h \
   /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QSslError \
   /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/PA7CP7W2FZ/moc_GroqClient.cpp \
   /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/PA7CP7W2FZ/../../../src/api/GroqClient.h \
+  /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/RLKJE3IM4Y/moc_ConversationStore.cpp \
+  /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/RLKJE3IM4Y/../../../src/db/ConversationStore.h \
   /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/EZ2KU4HIYP/moc_OllamaDialog.cpp \
   /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/EZ2KU4HIYP/../../../src/ollama/OllamaDialog.h \
   /home/ubu/Documents/BUILD/Qt-Chat/build/SupaLLMClient_autogen/EZ2KU4HIYP/moc_OllamaManager.cpp \

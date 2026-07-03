@@ -578,6 +578,13 @@ CMakeFiles/SupaLLMClient.dir/src/MainWindow.cpp.o: \
   /home/ubu/Documents/BUILD/Qt-Chat/src/theme/ThemeDialog.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSpinBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qspinbox.h \
+  /home/ubu/Documents/BUILD/Qt-Chat/src/db/ConversationStore.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsql-config.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlexports.h \
+  /home/ubu/Documents/BUILD/Qt-Chat/src/db/../models/Message.h \
   /home/ubu/Documents/BUILD/Qt-Chat/src/models/Message.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QInputDialog \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qinputdialog.h \
@@ -588,4 +595,7 @@ CMakeFiles/SupaLLMClient.dir/src/MainWindow.cpp.o: \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QJsonObject \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonobject.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QJsonDocument \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsondocument.h
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsondocument.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDialogButtonBox \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialogbuttonbox.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDateTime

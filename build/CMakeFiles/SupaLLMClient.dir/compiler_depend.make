@@ -1148,6 +1148,7 @@ CMakeFiles/SupaLLMClient.dir/src/MainWindow.cpp.o: /home/ubu/Documents/BUILD/Qt-
   /usr/include/x86_64-linux-gnu/qt6/QtWebEngineWidgets/qwebengineview.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QComboBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDialog \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDialogButtonBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QInputDialog \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
@@ -1171,6 +1172,7 @@ CMakeFiles/SupaLLMClient.dir/src/MainWindow.cpp.o: /home/ubu/Documents/BUILD/Qt-
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcombobox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialogbuttonbox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qinputdialog.h \
@@ -2637,6 +2639,7 @@ CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaDialog.cpp.o: /home/ubu/Documents/
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QProcess \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QRegularExpression \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSharedDataPointer \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
@@ -4329,8 +4332,6 @@ CMakeFiles/SupaLLMClient.dir/src/theme/ThemeManager.cpp.o: /home/ubu/Documents/B
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qformlayout.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialogbuttonbox.h:
-
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLayout:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/QFontDatabase:
@@ -4344,6 +4345,8 @@ CMakeFiles/SupaLLMClient.dir/src/theme/ThemeManager.cpp.o: /home/ubu/Documents/B
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgroupbox.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGroupBox:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QRegularExpression:
 
 /home/ubu/Documents/BUILD/Qt-Chat/src/ollama/OllamaDialog.cpp:
 
@@ -4362,6 +4365,8 @@ CMakeFiles/SupaLLMClient.dir/src/theme/ThemeManager.cpp.o: /home/ubu/Documents/B
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmessagebox.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qinputdialog.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialogbuttonbox.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsondocument.h:
 

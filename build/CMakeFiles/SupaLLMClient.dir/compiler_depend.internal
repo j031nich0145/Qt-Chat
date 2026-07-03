@@ -1151,6 +1151,7 @@ CMakeFiles/SupaLLMClient.dir/src/MainWindow.cpp.o
  /usr/include/x86_64-linux-gnu/qt6/QtWebEngineWidgets/qwebengineview.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QComboBox
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDialog
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDialogButtonBox
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QInputDialog
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel
@@ -1174,6 +1175,7 @@ CMakeFiles/SupaLLMClient.dir/src/MainWindow.cpp.o
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcombobox.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialogbuttonbox.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qinputdialog.h
@@ -2644,6 +2646,7 @@ CMakeFiles/SupaLLMClient.dir/src/ollama/OllamaDialog.cpp.o
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QProcess
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QRegularExpression
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSharedDataPointer
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF
